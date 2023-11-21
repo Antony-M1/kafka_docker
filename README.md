@@ -20,3 +20,11 @@ docker compose up -d
 You will see like this in terminal
 ![image](https://github.com/Antony-M1/kafka_docker/assets/96291963/d1a5f923-6891-4f2b-a2c8-9dd50e9f1068)
 
+Run this command to find the current `Process Status`
+```
+docker ps
+```
+you can see like this
+![image](https://github.com/Antony-M1/kafka_docker/assets/96291963/4c81febd-269f-491f-9546-fec782c7bcde)
+
+You can see the `zookeeper` running in the port `2181` and the `kafka` running in the port `9092`
