@@ -14,5 +14,5 @@ git clone https://github.com/Antony-M1/kafka_docker.git
 ### Step 2: Up the Container
 If you want to see the `logs` remove the `-d` from the below command
 ```
-docker-compose up -d
+docker compose up -d
 ```
