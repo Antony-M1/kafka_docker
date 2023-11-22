@@ -10,6 +10,11 @@ Apache Kafka is a distributed event store and stream-processing platform. It is 
 * [kafka](https://hub.docker.com/r/bitnami/kafka/tags) Verified Publisher✅
 * [Kafka Manager](https://hub.docker.com/r/hlebalbau/kafka-manager)
 
+# YouTube
+* [How to start an Apache Kafka broker with Docker and Docker-Compose](https://www.youtube.com/watch?v=Zq8aMrRnvQE)
+
+# Other GitHub Repo
+* [conduktor/kafka-stack-docker-compose](https://github.com/conduktor/kafka-stack-docker-compose)
   
 # Get Start
 ### Step 1: Clone the project
