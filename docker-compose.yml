@@ -5,6 +5,10 @@ services:
     image: bitnami/zookeeper:latest
     ports:
       - "2181:2181"
+    environment:
+      - ZOO_ENABLE_AUTH=yes
+      - ZOO_SERVER_USERS=admin
+      - ZOO_SERVER_PASSWORDS=Dragon@12345
 
   kafka:
     image: bitnami/kafka:latest
