@@ -19,14 +19,15 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
-  kafka-manager:
-    image: hlebalbau/kafka-manager:stable
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    container_name: kafka-ui
     environment:
-      - ZK_HOSTS=zookeeper:2181
+      - DYNAMIC_CONFIG_ENABLED=true
     ports:
-      - "9000:9000"
-    volumes:
-      - kafka-manager-data:/kafka-manager
+      - "8080:8080"
+    # volumes:
+    #   - ~/kui/config.yml:/etc/kafkaui/dynamic_config.yaml
 
 volumes:
   kafka-manager-data:
