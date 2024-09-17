@@ -26,8 +26,6 @@ services:
       - DYNAMIC_CONFIG_ENABLED=true
     ports:
       - "8080:8080"
-    # volumes:
-    #   - ~/kui/config.yml:/etc/kafkaui/dynamic_config.yaml
 
 volumes:
   kafka-manager-data:
