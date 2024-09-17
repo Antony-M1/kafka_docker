@@ -8,7 +8,8 @@ Apache Kafka is a distributed event store and stream-processing platform. It is 
 # Docker Image Details
 * [zookeeper](https://hub.docker.com/r/bitnami/zookeeper) Verified Publisher✅
 * [kafka](https://hub.docker.com/r/bitnami/kafka/tags) Verified Publisher✅
-* [Kafka Manager](https://hub.docker.com/r/hlebalbau/kafka-manager)
+* [Cluster Manager for Apache Kafka (CMAK)](https://hub.docker.com/r/hlebalbau/kafka-manager)
+* [Kafka UI](https://hub.docker.com/r/provectuslabs/kafka-ui/tags)
 
 # YouTube
 * [How to start an Apache Kafka broker with Docker and Docker-Compose](https://www.youtube.com/watch?v=Zq8aMrRnvQE)
