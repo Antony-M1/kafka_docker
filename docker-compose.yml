@@ -43,12 +43,12 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     networks:
       - kafka-network
-    healthcheck:
-      test: ["CMD-SHELL", "nc -z localhost 9092"]
-      interval: 10s
-      retries: 5
-      start_period: 30s
-      timeout: 30s
+    # healthcheck:
+    #   test: ["CMD-SHELL", "nc -z localhost 9092"]
+    #   interval: 10s
+    #   retries: 5
+    #   start_period: 30s
+    #   timeout: 30s
 
   kafka-ui:
     image: provectuslabs/kafka-ui:latest
@@ -56,8 +56,8 @@ services:
     environment:
       - DYNAMIC_CONFIG_ENABLED=true
     depends_on:
-      kafka:
-        condition: service_healthy
+      - kafka
+        # condition: service_healthy
     ports:
       - "8080:8080"
     networks:
