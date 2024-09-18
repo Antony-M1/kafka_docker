@@ -5,6 +5,9 @@
 
 Apache Kafka is a distributed event store and stream-processing platform. It is an open-source system developed by the Apache Software Foundation written in Java and Scala. The project aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds
 
+**Reference Link**
+* [Running multi-broker Kafka using docker](https://www.reddit.com/r/apachekafka/comments/xq2win/running_multibroker_kafka_using_docker/)
+
 # Docker Image Details
 * [zookeeper](https://hub.docker.com/r/bitnami/zookeeper) Verified Publisher✅
 * [kafka](https://hub.docker.com/r/bitnami/kafka/tags) Verified Publisher✅
@@ -17,6 +20,7 @@ Apache Kafka is a distributed event store and stream-processing platform. It is 
 
 # Other GitHub Repo
 * [conduktor/kafka-stack-docker-compose](https://github.com/conduktor/kafka-stack-docker-compose)
+* [docker-compose-kafka-single.yml](https://github.com/elephantscale/kafka-in-docker/blob/main/docker-compose-kafka-single.yml)
   
 # Get Start
 ### Step 1: Clone the project
