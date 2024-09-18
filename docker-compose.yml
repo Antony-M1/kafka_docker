@@ -4,7 +4,7 @@ services:
     image: bitnami/zookeeper:latest
     container_name: zookeeper
     ports:
-      - "2181:2181"
+      - 2181:2181
     environment:
       # ZOO_ENABLE_AUTH: yes
       # ZOO_SERVER_USERS: admin
@@ -28,8 +28,8 @@ services:
     image: bitnami/kafka:latest
     container_name: kafka
     ports:
-      - "9092:9092"
-      - "9093:9093"
+      - 9092:9092
+      - 9093:9093
     environment:
       KAFKA_CFG_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_CFG_LISTENERS: INSIDE://0.0.0.0:9092
@@ -59,7 +59,7 @@ services:
       - kafka
         # condition: service_healthy
     ports:
-      - "8080:8080"
+      - 8080:8080
     networks:
       - kafka-network 
 
